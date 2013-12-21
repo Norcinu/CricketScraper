@@ -1,6 +1,6 @@
+import sys
 from bs4 import BeautifulSoup
 from urllib2 import urlopen
-import sys
 from player import Bowler 
 from player import Batsman
 
@@ -22,8 +22,3 @@ def get_categorys(section_url):
     soup = BeautifulSoup(html, "lxml")
     print(soup.find_all("tr", "data1"))
     
-bowler =  Bowler()
-bowler.print_info()
-
-batsman = Batsman()
-batsman.print_info()

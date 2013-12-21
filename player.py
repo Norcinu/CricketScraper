@@ -1,5 +1,3 @@
-
-
 class Player(object):
     name = ""
     country = ""
